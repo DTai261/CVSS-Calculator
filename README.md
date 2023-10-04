@@ -15,7 +15,7 @@ To load an unpacked extension in developer mode:
 5. By default, when you load your extension locally, it will appear in the extensions menu Puzzle. Pin your extension to the toolbar to quickly access your extension during development.
 
 ## Features
-- CVSS Score Calculator 
+- CVSS Score Calculator, you can copy the score by click on it
 ![](images/ft_1.png)
 - Generate doughnut chart like in the report
 ![](images/ft_2.png)
