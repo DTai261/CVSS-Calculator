@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title>CVSS v3 Base Score Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="all" href="css/popup.css">
+
+    <style>
+@media screen and (min-width: 800px) {
+        #cvssboard {
+            width: 600px;
+        }
+}
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pie Chart Generator</title>
+    <script src="js/chart.js"></script>
+    <script src="js/html2canvas.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Chart Generator</h1>
+        
+        <script src="js/chart_labels.js"></script>
+        <script src="js/background.js"></script>
+        <script src="js/popup_chart.js"></script>
+        <form id="chartForm">
+            <div class="form-group">
+                <label for="critical">Critical:</label>
+                <input type="number" id="critical" name="critical" min="0">
+            </div>
+            
+            <div class="form-group">
+                <label for="high">High:</label>
+                <input type="number" id="high" name="high" min="0">
+            </div>
+            
+            <div class="form-group">
+                <label for="medium">Medium:</label>
+                <input type="number" id="medium" name="medium" min="0">
+            </div>
+            
+            <div class="form-group">
+                <label for="low">Low:</label>
+                <input type="number" id="low" name="low" min="0">
+            </div>
+            
+            <button type="submit">Generate Pie Chart</button>
+        </form>
+        
+        <p id="test"></p>
+    </div>
+
+    <h1 id="cvssHeading">CVSS Score Calculator</h1>
+    <div id="cvssboard">
+    </div>
+    <script src="js/popup.js"></script>
+    <script src="js/test.js"></script>
+
+</body>
+
+</html>
