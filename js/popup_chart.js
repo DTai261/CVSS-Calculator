@@ -255,7 +255,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         const paddingBetweenLegends = 12;
                         const totalLegendHeight = legendHitBoxes.reduce((acc, curr) => acc + curr.height, 0) + (opts?.offset?.top || 0) + (opts?.offset?.bottom || 0) + (paddingBetweenLegends * legendHitBoxes.length);
                 
-                        const width = legendHitBoxes[legendHitBoxes.length - 1].left + legendHitBoxes[legendHitBoxes.length - 1].width - left + 20;
+                        const width = legendHitBoxes[legendHitBoxes.length - 1].left + legendHitBoxes[legendHitBoxes.length - 1].width - left + 28;
                 
                         const borderRadius = 3; // Adjust this value to set the border radius
                 
